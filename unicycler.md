@@ -14,11 +14,13 @@ Step 6: Launch `nanoDJ`
 
 A message should appear in the message center at the top right of the screen (it's shaped like a bell). If you click on the message center it will give you the option to `access your running analysis`. This will take you the Jupyter notebook running `nanoDJ`. You should see orange swirly icons as the Jupyter notebook loads.
 
-Step 7: At the top left of the directory of this Jupyter notebook, you should see an icon for an up arrow above a horizontal line. Click this icon to upload your read files into this Jupyter notebook. If you have paired end reads, upload both Illumina read files separately. Upload the Nanopore reads as a separate file.
+Step 7: Click the icon for `terminal`. This should open up a command line terminal session.
 
-Step 8: Click the icon for `terminal`. This should upon up a command line terminal session.
+I've provided a walk through video of Steps 1 through 7 [here](https://www.youtube.com/watch?v=OKPDGWGYThU)
 
-Step 9: Run `unicycler` using the following commands
+Step 8: At the top left of the directory of this Jupyter notebook, you should see an icon for an up arrow above a horizontal line. Click this icon to upload your read files into this Jupyter notebook. If you have paired end reads, upload both Illumina read files separately. Upload the Nanopore reads as a separate file.
+
+Step 9: On the `terminal` command line, run the program `unicycler` using the following commands
 
 ```
 unicycler-runner.py -1 Illumina_read_file_1.fastq -2 Illumina_read_file_2.fastq -l Nanopore_read_file.fastq -o output_directory
